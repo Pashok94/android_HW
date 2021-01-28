@@ -6,8 +6,9 @@
     android:layout_height="match_parent"
     android:background="#1a1a00"
     android:orientation="vertical"
+    tools:context=".MainActivity"
     android:theme="@style/MyTheme"
-    tools:context=".MainActivity">
+    android:layout_marginTop="0dp">
 
     <TextView
         android:layout_width="match_parent"
@@ -31,6 +32,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:hint="Ваше имя:"
+        android:textColor="@color/colorText"
         android:inputType="textPersonName"
         android:textAlignment="textStart" />
 
@@ -45,6 +47,8 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
+            android:textSize="20sp"
+            android:textColor="@color/colorTextHint"
             android:text="Вы старше 18?" />
 
         <Switch
@@ -52,6 +56,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
+            android:textSize="20sp"
+            android:textColor="@color/colorTextHint"
             android:ems="5"
             android:text="Ваш пол?"
             android:textOn="М"
@@ -60,16 +66,16 @@
 
     <ToggleButton
         android:id="@+id/toggleButton"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:layout_width="200dp"
         android:textOn="Ставка 50%"
-        android:textOff="Идем All-in"
-        style="@style/YellowButton"/>
+        android:textOff="Идем All-in" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:text="Вращайте барабан!"/>
+        android:layout_height="70dp"
+        android:text="Вращайте барабан!"
+        android:onClick="onClickStart"/>
 
 </LinearLayout>
